@@ -33,3 +33,10 @@ body {
 
   position: relative;
 }
+
+.accordion .content-container .question::after {
+  content: '+';
+
+  position: absolute;
+  right: -5px;
+}
