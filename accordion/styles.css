@@ -32,6 +32,7 @@ body {
   border-bottom: 1px solid black;
 
   position: relative;
+  transition: .5s;
 }
 
 .accordion .content-container .question::after {
@@ -55,4 +56,16 @@ body {
 .accordion .content-container.active .answer {
   height: 150px;
   overflow: auto;
+}
+
+.accordion .content-container.active .question {
+  font-size: 18px;
+  transition: .5s;
+}
+
+.accordion .content-container.active .question::after {
+  content: '-';
+
+  font-size: 30px;
+  transition: .5s;
 }
